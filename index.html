@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amitesh Aggarwal - Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-database.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="logo">
+                <a href="#"><span>Amitesh</span> Aggarwal.</a>
+            </div>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="#home" class="active">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+                <div class="hamburger" aria-label="Toggle menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <p class="subtitle">Unity AR/VR & Game Developer | Researcher</p>
+                    <h1>Hi, I'm <span>Amitesh</span></h1>
+                    <h2>From India</h2>
+                    <a href="#contact" class="btn">Get In Touch</a>
+                </div>
+                <div class="hero-image-container">
+                    <img src="amin.jpg" alt="Amitesh Aggarwal" class="hero-img">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-image">
+                    <div class="image-container">
+                        <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/amin2.jpg-kANDNkbyfb8wrANmmnHas7Nf5lWTVG.jpeg" alt="Amitesh Aggarwal">
+                    </div>
+                </div>
+                <div class="about-text">
+                    <h2 class="section-title">About Me</h2>
+                    <p>I'm Amitesh Aggarwal, an AR/VR and Game Developer passionate about immersive technologies and educational innovation. With experience in Unity, AR/VR/MR, and app development, I've built 10+ projects and authored multiple research papers. Currently working as a Junior Programmer at IITL (CURIN), I'm also active in student leadership and technical communities. I aim to blend creativity and technology to solve real-world problems.</p>
+                    
+                    <div class="tabs">
+                        <div class="tab-links">
+                            <button class="tab-link active" data-tab="skills">Skills</button>
+                            <button class="tab-link" data-tab="experience">Experience</button>
+                            <button class="tab-link" data-tab="education">Education</button>
+                        </div>
+                        
+                        <div class="tab-content">
+                            <div class="tab-pane active" id="skills">
+                                <div class="skill-item">
+                                    <h4 class="skill-title">App/Game Development</h4>
+                                    <p>Unity | Building Android/iOS apps</p>
+                                </div>
+                                <div class="skill-item">
+                                    <h4 class="skill-title">AR/VR/MR Development</h4>
+                                    <p>Augmented, Virtual, and Mixed Reality projects</p>
+                                </div>
+                                <div class="skill-item">
+                                    <h4 class="skill-title">Researcher</h4>
+                                    <p>Educational Technology | AI | AR/VR | Published 5+ Research Papers</p>
+                                </div>
+                            </div>
+                            
+                            <div class="tab-pane" id="experience">
+                                <div class="timeline-item">
+                                    <span class="date">06/2024 – Present</span>
+                                    <h4>Junior Programmer <br>
+                                        Immersive and Interactive Technology Lab, CURIN – Chitkara University</h4>
+                                </div>
+                                <div class="timeline-item">
+                                    <h4>Working on AR/VR projects <br>
+                                        Developed 10+ Unity-based applications <br>
+                                        Published 5+ research papers in immersive tech and AI</h4>
+                                </div>
+                            </div>
+                            
+                            <div class="tab-pane" id="education">
+                                <div class="timeline-item">
+                                    <span class="date">10/2022 – 06/2026</span>
+                                    <h4>B.E. Computer Science and Engineering <br>
+                                        Chitkara University, Rajpura, Punjab</h4>
+                                </div>
+                                <div class="timeline-item">
+                                    <span class="date">04/2021 – 03/2022</span>
+                                    <h4>Senior Secondary Education <br>
+                                        Atam Vallabh Public School, Fazilka</h4>
+                                </div>
+                                <div class="timeline-item">
+                                    <span class="date">04/2019 – 03/2020</span>
+                                    <h4>Secondary Education <br>
+                                        Army Public School, Fazilka</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <div class="container">
+            <h2 class="section-title">My Services</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i data-lucide="code-2"></i>
+                    </div>
+                    <h3>App/Game Development</h3>
+                    <p>Creating Android/iOS apps and Unity-based games with smooth performance and engaging UI. <br>
+                        Experienced in cross-platform development using C# and Unity.</p>
+                    <a href="#" class="service-link"></a>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i data-lucide="layout-grid"></i>
+                    </div>
+                    <h3>AR/VR Solutions</h3>
+                    <p>Building immersive Augmented and Virtual Reality experiences using Unity and Vuforia.
+                        Ideal for educational, commercial, and interactive simulations.</p>
+                    <a href="#" class="service-link"></a>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i data-lucide="lightbulb"></i>
+                    </div>
+                    <h3>Research & Innovation</h3>
+                    <p>Conducting research in Educational Technology, AR/VR, and AI with published papers.
+                        Transforming ideas into impactful tech solutions.</p>
+                    <a href="#" class="service-link"></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="portfolio">
+        <div class="container">
+            <h2 class="section-title">My Work</h2>
+            <div class="portfolio-grid">
+                <div class="portfolio-item">
+                    <img src="rollball.png" alt="RollBall Game">
+                    <div class="portfolio-overlay">
+                        <h3>RollBall Game</h3>
+                        <h4>Experience the game on your PC</h4>
+                        <a href="rollballweb/index.html" class="portfolio-link"target="_blank">
+                            <i data-lucide="external-link"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="portfolio-item">
+                    <img src="hunterfarm.png" alt="HunterFarm Game">
+                    <div class="portfolio-overlay">
+                        <h3>HunterFarm Game</h3>
+                        <h4>Experience the game on your PC</h4>
+                        <a href="hunterweb/index.html" class="portfolio-link" target="_blank">
+                            <i data-lucide="external-link"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="portfolio-item">
+                    <img src="go car.png" alt="Go Car Game">
+                    <div class="portfolio-overlay">
+                        <h3>Go Car Game</h3>
+                        <h4>Experience the game on your PC</h4>
+                        <a href="gocarweb/index.html" class="portfolio-link"target="_blank">
+                            <i data-lucide="external-link"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                
+                
+                <div class="portfolio-item">
+                    <img src="jumpingboy.png" alt="Jumping Boy Game">
+                    <div class="portfolio-overlay">
+                        <h3>Jumping Boy Game</h3>
+                        <h4>Experience the game on your PC</h4>
+                        <a href="jumpingboyweb/index.html" class="portfolio-link"target="_blank">
+                            <i data-lucide="external-link"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="portfolio-item">
+                    <img src="boxblast.png" alt="Box Blast Game">
+                    <div class="portfolio-overlay">
+                        <h3>Box Blast Game</h3>
+                        <h4>Experience the game on your PC</h4>
+                        <a href="boxblastweb/index.html" class="portfolio-link"target="_blank">
+                            <i data-lucide="external-link"></i>
+                        </a>
+                    </div>
+                </div>
+
+                
+
+                
+                
+                        
+                <div class="portfolio-item">
+                    <img src="tomatofever.png" alt="TomatoFever Game">
+                    <div class="portfolio-overlay">
+                        <h3>TomatoFever Game</h3>
+                        <h4>Experience the game on your PC</h4>
+                        <a href="tomatofeverweb/index.html" class="portfolio-link"target="_blank">
+                            <i data-lucide="external-link"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Contact Me</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i data-lucide="mail"></i>
+                        <p>amiteshaggarwal9948@gmail.com</p>
+                    </div>
+                    <div class="contact-item">
+                        <i data-lucide="phone"></i>
+                        <p>+91 9888639756</p>
+                    </div>
+                    <div class="contact-item">
+                        <i data-lucide="map-pin"></i>
+                        <p>Chandigarh, India</p>
+                    </div>
+                    
+                    <div class="social-links">
+                        <a href="https://www.instagram.com/amiteshaggarwal" class="social-link" aria-label="Instagram">
+                            <i data-lucide="instagram"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/amitesh-aggarwal-834969258/" class="social-link" aria-label="LinkedIn">
+                            <i data-lucide="linkedin"></i>
+                        </a>
+                    </div>
+                    
+                    <a href="AMITESH Resume (5).pdf" download class="btn">Download CV</a>
+                </div>
+                
+                <div class="contact-form">
+                    <form name="submit-to-google-sheet" id="contactForm">
+                        <div class="form-group">
+                            <input type="text" name="Name" id="name" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" name="Email" id="email" placeholder="Your Email" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" name="Message" placeholder="Your Message" required></textarea>
+                        </div>
+                        <button type="submit" class="btn">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Amitesh Aggarwal. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        // Initialize Lucide icons
+        lucide.createIcons();
+    </script>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/7.14.1-0/firebase.js"></script>
+</body>
+</html>
